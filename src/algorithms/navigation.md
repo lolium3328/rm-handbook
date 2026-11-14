@@ -1,5 +1,7 @@
 # 04-b 导航算法 · Navigation
 
+> 本章待完善，当前内容为提纲。
+
 整体算法流程
 01 · 定位与建图（Localization & Mapping）
 

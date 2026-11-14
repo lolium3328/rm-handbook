@@ -12,4 +12,4 @@
 
 ## 工作记录
 
-- [2026-11-15 03:42 · mdBook 转换与 GitHub Pages 发布](worklogs/2026-11-15-0342-mdbook-github-pages.md)
+单次任务的计划、实施过程与验证结果保存在本地 `docs/worklogs/`，使用 Asia/Singapore 时间命名。该目录已加入 Git 忽略列表，不提交或推送到 GitHub。

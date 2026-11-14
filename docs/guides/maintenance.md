@@ -11,7 +11,7 @@
 | `theme/custom.css` | 中文正文行距、内容宽度和宽表格滚动样式 |
 | `.github/workflows/pages.yml` | 构建检查与 GitHub Pages 部署 |
 | `docs/guides/` | 长期维护和写作指南 |
-| `docs/worklogs/` | 带时间的任务计划、过程和验证记录 |
+| `docs/worklogs/` | 仅保存在本地的任务计划、过程和验证记录，已加入 Git 忽略列表 |
 | `book/` | 本地生成的静态站点，不提交 Git |
 
 ## 本地构建
@@ -25,7 +25,7 @@ mdbook serve --open
 
 `mdbook build` 生成 `book/`，可直接作为静态网站发布。构建配置使用 `create-missing = false`：如果目录引用了不存在的正文，构建会报错，避免误生成空章节。
 
-mdBook 目录使用相对 `src/` 的路径。尚未写作的章节可使用空目标，例如 `- [02 工程协作与信息获取（待编写）]()`；开始写作后再建立文件并填入路径。
+mdBook 目录使用相对 `src/` 的路径。当前只保留 00、01、04 三章，04 下的 a/b/c 均标为待完善；02、03、05 不属于当前章节结构。新增章节时先建立正文文件，再同步更新目录。
 
 ## GitHub Pages
 
@@ -44,7 +44,7 @@ mdBook 目录使用相对 `src/` 的路径。尚未写作的章节可使用空�
 ## 日常更新
 
 1. 修改 `src/` 正文；新增、调整章节时同步更新 `src/SUMMARY.md`。
-2. 在 `docs/worklogs/` 创建使用 Asia/Singapore 时间的任务记录，持续记录计划、改动与验证结果，并在 `docs/README.md` 登记。
+2. 在本地 `docs/worklogs/` 创建使用 Asia/Singapore 时间的任务记录，持续记录计划、改动与验证结果；该目录不提交 Git。新增长期文档时在 `docs/README.md` 登记。
 3. 运行 `mdbook build`，检查目录、表格和正文内部链接。
 4. 提交 Git commit 并推送到 `main`，确认 Actions 成功和线上页面可访问。
 
