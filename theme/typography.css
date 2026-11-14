@@ -1,0 +1,66 @@
+.content main { line-height: 1.95; overflow-wrap: break-word; }
+
+.content h1, .content h2, .content h3, .content h4 {
+    color: var(--hb-ink);
+    font-weight: 650;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+
+.content h1 { margin: 0 0 28px; font-size: clamp(2.7rem, 3vw, 3.4rem); line-height: 1.4; }
+.content h2 { margin: 52px 0 20px; padding-bottom: 12px; border-bottom: 1px solid var(--hb-border); font-size: 2.1rem; }
+.content h3 { margin: 36px 0 16px; font-size: 1.8rem; }
+.content h4 { margin: 28px 0 12px; font-size: 1.6rem; }
+.content p, .content ol, .content ul { line-height: 1.95; }
+.content p { margin: 0 0 20px; }
+.content li { margin: 6px 0; padding-left: 3px; }
+.content strong { color: var(--hb-ink); font-weight: 650; }
+.content a:not(.header):hover { text-underline-offset: 4px; }
+
+.content blockquote {
+    margin: 28px 0;
+    padding: 18px 22px;
+    border: 0;
+    border-left: 3px solid var(--quote-border);
+    border-radius: 0 8px 8px 0;
+    color: var(--fg);
+}
+
+.content blockquote > :last-child { margin-bottom: 0; }
+
+.content .table-wrapper {
+    margin: 24px 0 30px;
+    border: 1px solid var(--hb-border);
+    border-radius: 9px;
+    background: var(--hb-surface);
+    overscroll-behavior-x: contain;
+}
+
+.content table { width: 100%; margin: 0; border-spacing: 0; font-size: 1.35rem; line-height: 1.8; }
+.content table th, .content table td {
+    min-width: 95px;
+    padding: 14px 18px;
+    border: 0;
+    border-bottom: 1px solid var(--hb-border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.content table th { color: var(--hb-ink); font-weight: 600; white-space: nowrap; }
+.content table td:last-child { min-width: 220px; }
+.content table tr:last-child td { border-bottom: 0; }
+.content table thead tr { border: 0; }
+.content pre { padding: 18px 22px; border: 1px solid var(--hb-border); border-radius: 9px; line-height: 1.8; overflow-wrap: normal; }
+.content :not(pre) > code { padding: 3px 6px; border-radius: 4px; background: var(--hb-code-bg); }
+.content hr { margin: 40px 0; border: 0; border-top: 1px solid var(--hb-border); }
+#mdbook-search-wrapper { max-width: var(--content-max-width); margin: 25px auto 0; padding: 0 30px; }
+#mdbook-searchbar { padding: 13px 17px; border: 1px solid var(--hb-border); border-radius: 8px; box-shadow: none; font-size: 1.5rem; }
+
+@media (max-width: 600px) {
+    body { font-size: 1.5rem; }
+    .content h1 { font-size: 2.6rem; }
+    .content h2 { margin-top: 36px; font-size: 1.9rem; }
+    .content blockquote { padding: 15px 18px; }
+    .content table { font-size: 1.25rem; }
+    .content table th, .content table td { padding: 12px 14px; }
+}

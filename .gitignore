@@ -1,3 +1,5 @@
 /book/
 /docs/worklogs/
+/output/playwright/
+/.playwright-cli/
 .DS_Store

@@ -1,6 +1,8 @@
-# RM 算法组新人手册
+# 算法通识
 
-用 mdBook 整理的 RoboMaster 算法组新人手册，包含工程思维、问题解决和专业算法方向的学习指南。内容仍在编写中。
+用 mdBook 整理的机器人算法学习手册，包含工程思维、问题解决和专业算法方向的学习指南。内容仍在编写中。
+
+阅读界面采用暖白与蓝绿配色，支持手机阅读。
 
 - 在线阅读：[lolium3328.github.io/rm-handbook](https://lolium3328.github.io/rm-handbook/)
 - 手册目录：[src/SUMMARY.md](src/SUMMARY.md)

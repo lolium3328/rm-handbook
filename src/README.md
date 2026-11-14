@@ -1,13 +1,38 @@
-# RM 算法组新人手册
+<div class="handbook-home">
 
-这份手册关注算法组开发中的问题：怎样定义任务、选择方案、验证效果，以及让算法在机器人上稳定运行。
+<h1 class="home-title">算法<span>通识</span></h1>
 
-## 从哪里开始
+<p class="home-description">工程思维、问题解决与算法学习指南。</p>
 
-- [前言与使用说明](preface.md)：了解这份手册讨论的问题。
-- [工程思维与问题解决](engineering-thinking.md)：从任务定义到系统部署，判断一项算法工作是否完成。
-- [算法部分：教学与学习指南](algorithms/overview.md)：了解视觉、导航、强化学习的学习方向和资料入口。
+<div class="home-actions">
+<a class="home-primary" href="preface.html">开始阅读 <span aria-hidden="true">↗</span></a>
+</div>
 
-## 当前进度
+<div class="home-chapters">
+<a class="home-chapter" href="preface.html">
+<span class="home-chapter-number">00</span>
+<strong>前言与使用说明</strong>
+<span class="home-chapter-arrow" aria-hidden="true">↗</span>
+</a>
+<a class="home-chapter" href="engineering-thinking.html">
+<span class="home-chapter-number">01</span>
+<strong>工程思维与问题解决</strong>
+<span class="home-chapter-arrow" aria-hidden="true">↗</span>
+</a>
+<a class="home-chapter" href="algorithms/overview.html">
+<span class="home-chapter-number">04</span>
+<strong>算法学习指南</strong>
+<span class="home-chapter-arrow" aria-hidden="true">↗</span>
+</a>
+</div>
 
-本手册目前只有 00、01、04 三章。前言、工程思维和算法学习指南已有内容；04 下的视觉、导航、强化学习三个子章节均待完善，其中视觉与导航目前是提纲，强化学习尚无正文。
+<div class="home-directions">
+<p>专业方向</p>
+<div class="direction-links">
+<a href="algorithms/vision.html">视觉算法 <small>待完善</small></a>
+<a href="algorithms/navigation.html">导航算法 <small>待完善</small></a>
+<a href="algorithms/reinforcement-learning.html">强化学习 <small>待完善</small></a>
+</div>
+</div>
+
+</div>

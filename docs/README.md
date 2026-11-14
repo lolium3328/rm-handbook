@@ -7,8 +7,8 @@
 
 ## 长期维护说明
 
-- [维护与发布指南](guides/maintenance.md)：本地构建、文件组织、GitHub Pages 配置和日常发布。
-- [写作指南](guides/writing.md)：章节规划、写作约定和内容进度。
+- [维护与发布指南](guides/maintenance.md)：本地构建、文件组织、阅读主题、GitHub Pages 配置和日常发布。
+- [写作指南](guides/writing.md)：章节规划、标题编号、写作约定和内容进度。
 
 ## 工作记录
 

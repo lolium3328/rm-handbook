@@ -1,0 +1,45 @@
+:root, html.light, html:not(.js) {
+    --sidebar-target-width: 280px;
+    --content-max-width: 880px;
+    --menu-bar-height: 64px;
+    --mono-font: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    --hb-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    --hb-accent: #087f72;
+    --hb-accent-soft: #e7f2ee;
+    --hb-ink: #20332f;
+    --hb-muted: #68746e;
+    --hb-border: #e4e8e1;
+    --hb-surface: #ffffff;
+    --hb-code-bg: #eef2ec;
+    --hb-amber: #86652f;
+    --hb-amber-bg: #f8f0de;
+}
+
+:root, html.light, html:not(.js) {
+    --bg: #fafbf7;
+    --fg: #34413d;
+    --sidebar-bg: #f3f5ef;
+    --sidebar-fg: #66716b;
+    --sidebar-active: var(--hb-accent);
+    --sidebar-spacer: var(--hb-border);
+    --icons: #7c8780;
+    --icons-hover: var(--hb-accent);
+    --links: var(--hb-accent);
+    --theme-popup-bg: var(--hb-surface);
+    --theme-popup-border: var(--hb-border);
+    --theme-hover: var(--hb-accent-soft);
+    --quote-bg: #eff5ef;
+    --quote-border: #9fc3b1;
+    --table-border-color: var(--hb-border);
+    --table-header-bg: #eff3ec;
+    --table-alternate-bg: #f8faf6;
+    --searchbar-bg: var(--hb-surface);
+    --searchbar-fg: var(--fg);
+    --searchbar-border-color: var(--hb-border);
+    --searchresults-header-fg: var(--hb-muted);
+    --searchresults-li-bg: var(--hb-accent-soft);
+    --search-mark-bg: #ccebdd;
+    --inline-code-color: #386d5b;
+    --scrollbar: #c3ccc0;
+    --color-scheme: light;
+}

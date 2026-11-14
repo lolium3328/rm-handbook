@@ -1,6 +1,6 @@
 [book]
-title = "RM 算法组新人手册"
-description = "面向 RoboMaster 算法组新人的工程思维、问题解决与算法学习手册。"
+title = "算法通识"
+description = "工程思维、问题解决与机器人算法学习指南。"
 language = "zh-CN"
 src = "src"
 
@@ -10,9 +10,12 @@ create-missing = false
 
 [output.html]
 default-theme = "light"
-preferred-dark-theme = "navy"
+preferred-dark-theme = "light"
 no-section-label = true
+sidebar-header-nav = false
+mathjax-support = true
 site-url = "/rm-handbook/"
 git-repository-url = "https://github.com/lolium3328/rm-handbook"
 edit-url-template = "https://github.com/lolium3328/rm-handbook/edit/main/{path}"
-additional-css = ["theme/custom.css"]
+additional-css = ["theme/tokens.css", "theme/layout.css", "theme/typography.css", "theme/home.css"]
+additional-js = ["theme/handbook.js"]

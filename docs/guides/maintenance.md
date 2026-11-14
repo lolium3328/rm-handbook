@@ -8,7 +8,13 @@
 | `src/SUMMARY.md` | 章节目录和顺序 |
 | `book.toml` | 中文元数据、主题、仓库链接和 Pages 子路径 |
 | `.mdbook-version` | 本地与 CI 使用的 mdBook 版本，目前为 0.5.4 |
-| `theme/custom.css` | 中文正文行距、内容宽度和宽表格滚动样式 |
+| `theme/tokens.css` | 暖白蓝绿配色、字体和页面宽度 |
+| `theme/layout.css` | 侧栏、工具栏、章节导航和手机布局 |
+| `theme/typography.css` | 中文正文、标题、表格、引用与代码排版 |
+| `theme/home.css` | 首页的标题区、章节入口和专业方向样式 |
+| `theme/handbook.js` | 中文界面文字、侧栏标识、待完善标记与翻页文字 |
+| `theme/favicon.svg` | 算法通识站点图标 |
+| `theme/head.hbs` | 固定使用单一浅色主题 |
 | `.github/workflows/pages.yml` | 构建检查与 GitHub Pages 部署 |
 | `docs/guides/` | 长期维护和写作指南 |
 | `docs/worklogs/` | 仅保存在本地的任务计划、过程和验证记录，已加入 Git 忽略列表 |
@@ -26,6 +32,18 @@ mdbook serve --open
 `mdbook build` 生成 `book/`，可直接作为静态网站发布。构建配置使用 `create-missing = false`：如果目录引用了不存在的正文，构建会报错，避免误生成空章节。
 
 mdBook 目录使用相对 `src/` 的路径。当前只保留 00、01、04 三章，04 下的 a/b/c 均标为待完善；02、03、05 不属于当前章节结构。新增章节时先建立正文文件，再同步更新目录。
+
+## 阅读主题
+
+页面只使用暖白蓝绿这一套主题，不提供主题切换；`theme/head.hbs` 在初始化前覆盖旧的主题偏好，避免旧设置影响显示。字体使用系统中文字体，不请求外部字体服务。桌面侧栏默认展开，手机通过左上角按钮展开目录，搜索保留 mdBook 的内置功能。
+
+导航章节的 LaTeX 公式通过 mdBook 内置的 MathJax 支持渲染。
+
+`book.toml` 通过 `additional-css` 和 `additional-js` 加载样式与界面增强脚本，不覆盖完整的 mdBook 页面模板。更新 mdBook 后检查侧栏、搜索和翻页。
+
+首页 `src/README.md` 使用 HTML 编排章节入口，其中链接直接指向构建后的 `.html` 页面；普通正文仍使用 Markdown 的 `.md` 相对链接。新增或重命名章节时同时检查两种链接。没有 JavaScript 时正文和首页入口仍可阅读，目录使用 mdBook 自带的回退页面。
+
+浏览器检查的截图和临时快照放在已忽略的 `output/playwright/` 与 `.playwright-cli/`，不提交 Git。
 
 ## GitHub Pages
 
